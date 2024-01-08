@@ -8,13 +8,15 @@ from typing import Generator, List, Set, Tuple
 def sign(n: int):
     return 1 if n > 0 else -1
 
+@numba.jit(nopython = True, parallel = False, fastmath = True, forceobj = False)
 def gcd_recursion(a: int, b: int) -> int:
     """ Find GCD by recursing on a mod b """
     if(b == 0):
-        return sign(a) * a
+        return a if a > 0 else -a
 
     return gcd_recursion(b, a % b)
 
+@numba.jit(nopython = True, parallel = False, fastmath = True, forceobj = False)
 def gcd_euclidian(a: int, b: int) -> int:
     """ Euler algo """
 
@@ -34,7 +36,7 @@ def gcd(a: int, b: int, fn = None) -> int:
     # ensure a >= b
     a, b = (a, b) if a >= b else (b, a)
 
-    fn = fn or gcd_euclidian
+    fn = fn or gcd_recursion
     return fn(a, b)
 
 def extended_euclidian(a: int, b: int, state:Tuple[int, int, int] = None) -> int:
@@ -156,29 +158,20 @@ def is_prime(n: int) -> bool:
             return  False
     return True
 
-def ifactors(n: int) -> Generator[Tuple[int, int], int, None]:
+def ifactors(n: int) -> List[Tuple[int, int]]:
     """   """
-    n_abs = sign(n) * n
-    half_n = n_abs // 2
-    is_prime = True
-    for p in primes_below(half_n + 1):
-        if p > half_n:
-            break
-        
-        
-        if n_abs % p == 0:
-            is_prime = False
+    n = sign(n) * n
+    factor_list = []
+    for p in sieve_of_eratosthenes(n // 2):
+        if n % p == 0:
             k = 1
-            m = n_abs // p
+            m = n // p
             while m % p == 0:
                 m = m // p
                 k += 1
-            yield (p, k)
+            factor_list.append((p, k))
     
-    if is_prime:
-        yield (n_abs, 1)
-                
-    return
+    return factor_list or [(n, 1)]
 
 def divisors(n: int) -> Tuple[int, ...]:
     """ """
@@ -207,7 +200,7 @@ def totient(n: int) -> int:
 def order_of_powers(g: int, n: int) -> List[int]:
     """ g ^ k % n for k being co-prime with phi(n) """
 
-    # order_of_powers = sorted(set([g ** k % n for k in co_primes(totient(n))]))
+    # order_of_powers = sorted(set([pow(g, k, n) for k in co_primes(totient(n))]))
     # keep all calcs mod n to remove overflow errors
     ks = co_primes(totient(n))
     order_of_powers = set()
@@ -240,16 +233,16 @@ def is_order_n(a: int, n: int):
     # we can do better than all k < n by only looking at divisors of totient(n)
     phi_n_divisors = divisors(ord_n)
     for k in phi_n_divisors:
-        if a ** k % n == 1:
+        if pow(a, k, n) == 1:
             return k == ord_n
     
     return np.NaN
 
 def cyclic_group(a, n, op):
-    group = set([(a ** k) % n for k in range(1, n)])
+    group = set([pow(a, k, n) for k in range(1, n)])
     return group
 
-def primative_roots(n):
+def primitive_roots(n):
     # g is a primitive root modulo n if for every integer a coprime to n, there is some integer k for which gk ≡ a (mod n)
     
     # check n is form 2, 4, p^s, 2p^s, where s is any positive integer and p is an odd prime
@@ -260,7 +253,7 @@ def primative_roots(n):
             (len(factors) == 1 and factors[0][0] < 2))):
         return [] # Exception("No primitive roots exist")
     
-    # find smallest primative root
+    # find smallest  root
     ord_n = totient(n)
     g = None
     for a in co_primes(n):
@@ -272,5 +265,5 @@ def primative_roots(n):
     prime_roots = order_of_powers(g, n)
      
     assert len(prime_roots) == totient(ord_n)
-    assert all(g ** ord_n % n == 1 for g in prime_roots)
+    assert all(pow(g, ord_n, n) == 1 for g in prime_roots)
     return prime_roots
