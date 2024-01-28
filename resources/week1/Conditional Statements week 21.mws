@@ -1,0 +1,305 @@
+{VERSION 6 0 "IBM INTEL NT" "6.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Comment" 2 18 "" 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 256 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+257 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 258 "" 0 1 0 0 
+0 0 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 259 "" 0 1 0 0 0 0 0 1 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 260 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 261 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+262 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 263 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 264 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 265 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 266 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+267 "" 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 268 "" 0 1 0 0 
+0 0 1 0 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 269 "" 0 1 0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 }{CSTYLE "" -1 270 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 271 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 
+272 "" 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 }{CSTYLE "" -1 273 "" 0 1 0 0 
+0 0 0 1 0 0 0 0 0 0 0 1 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Tim
+es" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }
+{PSTYLE "Heading 1" -1 3 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 1 2 1 
+2 2 2 2 1 1 1 1 }1 1 0 0 8 4 1 0 1 0 2 2 0 1 }{PSTYLE "Warning" -1 7 
+1 {CSTYLE "" -1 -1 "Courier" 1 10 0 0 255 1 2 2 2 2 2 1 1 1 3 1 }1 1 
+0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Error" 7 8 1 {CSTYLE "" -1 -1 "" 0 
+1 255 0 255 1 0 0 0 0 0 0 0 0 0 0 }0 0 0 -1 -1 -1 0 0 0 0 0 0 -1 0 }
+{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 
+2 2 2 2 2 2 1 1 1 1 }3 3 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Outpu
+t" -1 12 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }
+1 3 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Normal" -1 256 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }3 1 0 0 0 0 1 0 1 0 2 2 
+0 1 }}
+{SECT 0 {SECT 0 {PARA 3 "" 0 "" {TEXT -1 30 "Conditional statements we
+ek 21" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart:" }}}{PARA 
+0 "" 0 "" {TEXT -1 169 "In the previous two lectures we learned how to
+ make Maple repeat a block of statements. In this section we learn how
+ to make Maple skip over certain blocks of statement." }}{EXCHG {PARA 
+0 "" 0 "" {TEXT -1 164 "Here are a few examples of simple conditional \+
+statements. The next command randomly generates a zero or one and if t
+he random number is zero, the statement outputs " }{TEXT 0 5 "heads" }
+{TEXT -1 23 ", otherwise it outputs " }{TEXT 0 5 "tails" }{TEXT -1 45 
+". Try executing this statement several times." }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 49 "if rand(0..1)()= 0 then\n   head\nelse\n   tai
+l\nfi;\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#%%headG" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 203 "If we r
+emove the else-part of the if-then-else statement, so that it becomes \+
+an if-statement, then the statement will produce no output about half \+
+of the time. Try executing this statement several times." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "if rand(0..1)() = 0 then head fi;" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#%%headG" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 9 "#Exercise" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+49 "a := 3;\nb := 0;\nif b < a then a \nelse \nb \nend if;" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%\"aG\"\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#>%\"bG\"\"!" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"$" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "\n#Exercise" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 128 "x:=1;\n  if (x > 2)then\nprint (\"The value of x is \+
+greater than 2.\");\n  else\nprint(\"The value of x is not greater tha
+n 2.\");\n  fi;" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%\"xG\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#QF
+The~value~of~x~is~not~greater~than~2.6\"" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 9 "#Exercise" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 110 "my:=proc(x)\n if x < 0 then
+ print('argument*is*negative')\n else\nprint('argument*is*positive')\n
+ end if\nend proc;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#myGf*6#%\"xG6
+\"F(F(@%29$\"\"!-%&printG6#.*(%)argumentG\"\"\"%#isGF3%)negativeGF3-F.
+6#.*(F2F3F4F3%)positiveGF3F(F(F(" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 7 "my(-5);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#*(%)argumen
+tG\"\"\"%#isGF%%)negativeGF%" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 69 "a := 1; b := 1;\n \+
+ if a = b then \nprint(`a and b are equal`)\n  end if;" }}{PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"aG\"\"
+\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"bG\"\"\"" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#%2a~and~b~are~equalG" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT -1 111 "Here is a simple procedure. It takes in two numbers as
+ parameters and it returns the larger of the two numbers." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 58 "bigger := proc( a, b )\n  if a >= b
+ then a else b fi;\nend;\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'bigge
+rGf*6$%\"aG%\"bG6\"F)F)@%19%9$F-F,F)F)F)" }}}{PARA 0 "" 0 "" {TEXT -1 
+11 "Try it out." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "bigger(3,
+ 3);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"$" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 15 "bigger(-3, -5);" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#!\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "Exercise" }}
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 
+0 "" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 7 "" 
+1 "" {TEXT -1 18 "Warning, (in -1) \n" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 61 "ABS := proc (x)\n if x < 0 then -x \nelse \nx \n end \+
+if\nend proc;" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "ABS(-7);" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%$ABSGf*6#%\"xG6\"F(F(@%29$\"\"!,$F+!\"\"F+
+F(F(F(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"(" }}}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 14 "The procedure " }{TEXT 0 
+6 "bigger" }{TEXT -1 58 " introduces another important element of prog
+ramming, the " }{TEXT 271 21 "conditional statement" }{TEXT -1 16 " (a
+lso called a " }{TEXT 272 25 "if-then-else-fi statement" }{TEXT -1 
+289 ") . The conditional statement allows Maple to make a choice when \+
+it is computing. A conditional statement is also sometimes called a br
+anching statement since it gives Maple a choice between two possible b
+ranches of calculations to make. Here is Maple's syntax for a conditio
+nal statement." }}{PARA 0 "" 0 "" {TEXT -1 24 "                       \+
+ " }{TEXT 0 2 "if" }{TEXT -1 2 "  " }{TEXT 261 18 "boolean_expression
+" }{TEXT -1 1 " " }{TEXT 0 4 "then" }{TEXT -1 1 " " }}{PARA 0 "" 0 "" 
+{TEXT -1 30 "                              " }{TEXT 260 26 "sequence_o
+f_Maple_commands" }}{PARA 0 "" 0 "" {TEXT -1 24 "                     \+
+   " }{TEXT 0 4 "else" }}{PARA 0 "" 0 "" {TEXT -1 30 "                \+
+              " }{TEXT 267 26 "sequence_of_Maple_commands" }}{PARA 0 "
+" 0 "" {TEXT -1 24 "                        " }{TEXT 0 2 "fi" }}{PARA 
+0 "" 0 "" {TEXT -1 54 "The part of the if-then-else-fi statement betwe
+en the " }{TEXT 0 2 "if" }{TEXT -1 9 " and the " }{TEXT 0 4 "then" }
+{TEXT -1 15 " is called the " }{TEXT 257 16 "conditional-part" }{TEXT 
+-1 113 " and it is either true or false. If the conditional-part is tr
+ue, then Maple executes the statements between the " }{TEXT 0 4 "then
+" }{TEXT -1 9 " and the " }{TEXT 0 4 "else" }{TEXT -1 34 ". These stat
+ements are called the " }{TEXT 265 21 "body of the then-part" }{TEXT 
+-1 87 ". If the conditional-part is false, then the Maple executes the
+ statements between the " }{TEXT 0 4 "else" }{TEXT -1 9 " and the " }
+{TEXT 0 2 "fi" }{TEXT -1 34 ". These statements are called the " }
+{TEXT 258 21 "body of the else-part" }{TEXT -1 239 ". The bodies of ei
+ther the then or else part can contain any number of Maple commands.  \+
+The body of the else-part is optional and if it is left off, then the \+
+conditional statement has the following simpler form, which is referre
+d to as an " }{TEXT 262 12 "if-statement" }{TEXT -1 1 "." }}{PARA 0 "
+" 0 "" {TEXT -1 24 "                        " }{TEXT 0 2 "if" }{TEXT 
+-1 2 "  " }{TEXT 263 18 "boolean_expression" }{TEXT -1 1 " " }{TEXT 0 
+4 "then" }{TEXT -1 1 " " }}{PARA 0 "" 0 "" {TEXT -1 29 "              \+
+               " }{TEXT 264 28 "sequence_of_Maple_statements" }}{PARA 
+0 "" 0 "" {TEXT -1 5 "     " }{TEXT 259 19 "                   " }
+{TEXT 0 2 "fi" }}{PARA 0 "" 0 "" {TEXT -1 246 "If the conditional-part
+ of an if-statement is true, then Maple executes the body of the then-
+part. If the conditional-part of an if-statement is false, then Maple \+
+does not execute any statements, and it appears as if the if-statement
+ did nothing." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" 
+{TEXT -1 120 "The formatting of the conditional statement, with the bo
+dies of the then and else parts indented slightly and the words " }
+{TEXT 0 4 "else" }{TEXT -1 5 " and " }{TEXT 0 2 "fi" }{TEXT -1 157 " o
+n their own lines, is not part of the syntax. But the formatting makes
+ it a lot easier to read a conditional statement and should be used mo
+st of the time." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" 
+{TEXT -1 1 "E" }{TEXT 273 2 "x." }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}
+{PARA 0 "" 0 "" {TEXT -1 158 "Suppose that we want to represent in Map
+le a piecewise defined function with three pieces. For example, suppos
+e we want to represent the function g defined by" }}{PARA 256 "" 0 "" 
+{XPPEDIT 18 0 "x^2+x;" "6#,&*$%\"xG\"\"#\"\"\"F%F'" }{TEXT -1 5 " for \+
+" }{XPPEDIT 18 0 "x <= 0;" "6#1%\"xG\"\"!" }{TEXT -1 5 ", by " }
+{XPPEDIT 18 0 "sin(x);" "6#-%$sinG6#%\"xG" }{TEXT -1 8 " for 0 <" }
+{XPPEDIT 18 0 "x;" "6#%\"xG" }{TEXT -1 2 "< " }{XPPEDIT 18 0 "3*Pi;" "
+6#*&\"\"$\"\"\"%#PiGF%" }{TEXT -1 9 ", and by " }{XPPEDIT 18 0 "x^2-6*
+x*Pi+9*Pi^2-x+3*Pi;" "6#,,*$%\"xG\"\"#\"\"\"*(\"\"'F'F%F'%#PiGF'!\"\"*
+&\"\"*F'*$F*F&F'F'F%F+*&\"\"$F'F*F'F'" }{TEXT -1 5 " for " }{XPPEDIT 
+18 0 "3*Pi <= x;" "6#1*&\"\"$\"\"\"%#PiGF&%\"xG" }{TEXT -1 1 "," }}
+{PARA 0 "" 0 "" {TEXT -1 87 "or, to use a notation similar to (but not
+ exactly like) standard mathematical notation," }}{PARA 256 "" 0 "" 
+{XPPEDIT 18 0 "g(x) = PIECEWISE([x^2+x, x <= 0],[sin(x), x < 3*Pi],[x^
+2-6*Pi*x+9*Pi^2-x+3*Pi, 3*Pi <= x]);" "6#/-%\"gG6#%\"xG-%*PIECEWISEG6%
+7$,&*$F'\"\"#\"\"\"F'F/1F'\"\"!7$-%$sinG6#F'2F'*&\"\"$F/%#PiGF/7$,,*$F
+'F.F/*(\"\"'F/F9F/F'F/!\"\"*&\"\"*F/*$F9F.F/F/F'F?*&F8F/F9F/F/1*&F8F/F
+9F/F'" }{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 48 "Here is a procedu
+re that computes this function." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 140 "g := proc(x)\n  if x <= 0 then\n    x^2 + x\n  else\n    if x
+ < 3*Pi then\n      sin(x)\n    else\n      x^2-6*x*Pi+9*Pi^2-x+3*Pi\n
+    fi\n  fi\nend;\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"gGf*6#%\"x
+G6\"F(F(@%19$\"\"!,&*$)F+\"\"#\"\"\"F1F+F1@%2F+,$*&\"\"$F1%#PiGF1F1-%$
+sinG6#F+,,F.F1*(\"\"'F1F+F1F7F1!\"\"*&\"\"*F1)F7F0F1F1F+F>*&F6F1F7F1F1
+F(F(F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{PARA 0 "" 0 
+"" {TEXT -1 1 "T" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" 
+{TEXT -1 17 "The syntax for a " }{TEXT 270 25 "if-then-elif-then-else-
+fi" }{TEXT -1 41 " statement should be pretty clear by now." }}{PARA 
+0 "" 0 "" {TEXT -1 25 "                         " }{TEXT 0 2 "if" }
+{TEXT -1 21 "  boolean_expression " }{TEXT 0 4 "then" }}{PARA 0 "" 0 "
+" {TEXT -1 56 "                              sequence_of_Maple_command
+s" }}{PARA 0 "" 0 "" {TEXT -1 25 "                         " }{TEXT 0 
+4 "elif" }{TEXT -1 1 " " }{TEXT 268 18 "boolean expression" }{TEXT -1 
+1 " " }{TEXT 0 4 "then" }}{PARA 0 "" 0 "" {TEXT -1 30 "               \+
+               " }{TEXT 269 26 "sequence_of_Maple_commands" }}{PARA 0 
+"" 0 "" {TEXT -1 25 "                         " }{TEXT 0 4 "else" }}
+{PARA 0 "" 0 "" {TEXT -1 30 "                              " }{TEXT 
+256 26 "sequence_of_Maple_commands" }}{PARA 0 "" 0 "" {TEXT -1 25 "   \+
+                      " }{TEXT 0 2 "fi" }}{PARA 0 "" 0 "" {TEXT -1 
+105 "Remember that there can be as many elif-then clauses as needed in
+ this form of the conditional statement." }}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" 
+{TEXT -1 209 "The next example shows how we might need two if-then-els
+e-fi statements nested inside of an if-then-else-fi statement, one in \+
+each of the then and else parts. This procedure finds the largest of t
+hree numbers." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 131 "bigger3 :=
+ proc( a, b, c )\n  if a >= b then \n    if a >= c then a else b fi; \+
+\n  else  \n    if b >= c then b else c fi; \n  fi;\nend;\n" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%(bigger3Gf*6%%\"aG%\"bG%\"cG6\"F*F*@%19%9$
+@%19&F.F.F-@%1F1F-F-F1F*F*F*" }}}{PARA 0 "" 0 "" {TEXT -1 23 "Try this
+ procedure out." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "bigger3( \+
+1, 2, 3 );" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"$" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 19 "bigger3( 3, 2, 1 );" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"\"$" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "big
+ger3( 1, 3, 2 );" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"$" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 29 "Th
+is procedure could use the " }{TEXT 0 4 "elif" }{TEXT -1 132 " abbrevi
+ation for one of the nested conditional statements, but that probably \+
+would not make the procedure any easier to understand." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{PARA 0 "" 0 "" {TEXT 
+-1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 34 "There is another way to impleme
+nt " }{TEXT 0 7 "bigger3" }{TEXT -1 50 ". This version uses nested cal
+ls to our procedure " }{TEXT 0 6 "bigger" }{TEXT -1 56 " instead of ne
+sted conditional statements. (Recall that " }{TEXT 0 6 "bigger" }
+{TEXT -1 52 " was defined at the very beginning of this section.)" }}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 60 "bigger3 := proc(a, b, c)\n  \+
+ bigger( bigger(a, b), c );\nend;\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#>%(bigger3Gf*6%%\"aG%\"bG%\"cG6\"F*F*-%'biggerG6$-F,6$9$9%9&F*F*F*" }
+}}{PARA 0 "" 0 "" {TEXT -1 144 "This is a common technique in programm
+ing. Use one procedure as part of the definition of another procedure.
+  If we compare the two versions of " }{TEXT 0 7 "bigger3" }{TEXT -1 
+31 ", notice how the inner call to " }{TEXT 0 6 "bigger" }{TEXT -1 79 
+" plays the same role as the outer conditional statement, and the oute
+r call to " }{TEXT 0 6 "bigger" }{TEXT -1 19 " plays the role of " }
+{TEXT 266 4 "both" }{TEXT -1 34 " the inner conditional statements." }
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "bigger3(-3, 4, 2);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"%" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" 
+{TEXT -1 31 "We can also create a procedure " }{TEXT 0 7 "bigger4" }
+{TEXT -1 158 " that finds the largest of four numbers. We can do this \+
+two ways, one way using nested conditional statements and another way \+
+using nested procedure calls to " }{TEXT 0 7 "bigger3" }{TEXT -1 8 " a
+nd/or " }{TEXT 0 6 "bigger" }{TEXT -1 46 ". The nested conditional sta
+tement version of " }{TEXT 0 7 "bigger4" }{TEXT -1 85 " will be quite \+
+messy but you should try writing it. Here are several ways of writing \+
+" }{TEXT 0 7 "bigger4" }{TEXT -1 30 " using nested procedure calls." }
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 74 "bigger4 := proc(a, b, c, d)
+\n   bigger( bigger(a, b), bigger(c, d) );\nend;\n" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%(bigger4Gf*6&%\"aG%\"bG%\"cG%\"dG6\"F+F+-%'biggerG6
+$-F-6$9$9%-F-6$9&9'F+F+F+" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 75 "bigger4 := proc(a, b, c, d)\n   big
+ger( bigger( bigger(a, b), c ), d);\nend;\n" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%(bigger4Gf*6&%\"aG%\"bG%\"cG%\"dG6\"F+F+-%'biggerG6$-
+F-6$-F-6$9$9%9&9'F+F+F+" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 67 "bigger4 := proc(a, b, c, d)\n   big
+ger( bigger3(a, b, c), d );\nend;\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#>%(bigger4Gf*6&%\"aG%\"bG%\"cG%\"dG6\"F+F+-%'biggerG6$-%(bigger3G6%9$
+9%9&9'F+F+F+" }}}{PARA 0 "" 0 "" {TEXT -1 45 "There are still several \+
+other ways of making " }{TEXT 0 7 "bigger4" }{TEXT -1 8 " out of " }
+{TEXT 0 6 "bigger" }{TEXT -1 5 " and " }{TEXT 0 7 "bigger3" }{TEXT -1 
+16 ". What are they?" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "#Exercise" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}}{PARA 
+3 "" 0 "" {TEXT -1 0 "" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 134 "S
+ign:=proc(x)\n   if x<0 then\n      print(\"negative\")\n   elif x=0 t
+hen\n      print(\"zero\")\n   else\n      print(\"positive\")\n\n   f
+i\nend: " }}{PARA 0 "" 0 "" {TEXT -1 2 "  " }{MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "Sign(9);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#Q)positive6\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 7 "ex
+ample" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 123 "f:=proc(x)    \ni
+f x::integer then\n        print(\"an integer\")\n    else\n        pr
+int(\"not an integer\")\n    end if\nend proc:" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 7 "f(5.5);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#Q/not~an~integer6\"" }}}{EXCHG 
+{PARA 0 "" 0 "" {TEXT -1 31 "Absolute value of a real number" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }{XPPMATH 20 "6#\"\"$" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 9 "Factorial" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 79 "recfact:=proc(n)\n   if n=
+0 then\n      1\n   else\n    n*recfact(n-1);\nfi\nend;\n \n\n" }}
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+>%(recfactGf*6#%\"nG6\"F(F(@%/9$\"\"!\"\"\"*&F+F--F$6#,&F+F-F-!\"\"F-F
+(F(F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 11 "recfact(3);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"'" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 126 "a := 3
+;\nif a = 1 then print(first) elif a = 2 then print(second) elif a = 3
+ then print(third) else print(`not 1 2 or 3`);\nfi;\n" }}{PARA 0 "> " 
+0 "" {MPLTEXT 1 0 0 "" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%\"aG\"\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#%&thirdG" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 128 "restart;\n \+
+print(\"Prime numbers between 3 and 20 are\");\n for n from 3 by 2 to \+
+20 do\n if isprime(n) then print(n)\n end if\n end do;" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#QCPrime~numbers~between~3~and~20~are6\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#\"\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"
+\"&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"(" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"#6" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#8" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#\"#<" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#>
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 68 "IsEven := proc (x)\nif \+
+irem(x, 2) = 0 then true\nelse false \nfi \nend;\n" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%'IsEvenGf*6#%\"xG6\"F(F(@%/-%%iremG6$9$\"\"#\"\"!%%
+trueG%&falseGF(F(F(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "IsEv
+en(4.4);" }}{PARA 8 "" 1 "" {TEXT -1 96 "Error, (in IsEven) invalid in
+put: irem received 4.4, which is not valid for its 1st argument, m\n" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 175 "HAT:= proc(x)\n if type(
+x, numeric) then\n    if x <= 0 then 0 \n    elif x <= 1 then x \n    \+
+elif x <= 2 then 2-x \n    else 0 \nend if \nelse print(\"Not Numeric
+\")\n    fi:\nend proc;" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#>%$HATGf*6#
+%\"xG6\"F(F(@%-%%typeG6$9$%(numericG@)1F-\"\"!F11F-\"\"\"F-1F-\"\"#,&F
+5F3F-!\"\"F1-%&printG6#Q,Not~NumericF(F(F(F(" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 7 "HAT(y);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#Q,Not~
+Numeric6\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}{MARK "24 0 0" 0 }
+{VIEWOPTS 1 1 0 3 2 1804 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }

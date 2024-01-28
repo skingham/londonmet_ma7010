@@ -1,0 +1,440 @@
+{VERSION 6 0 "IBM INTEL NT" "6.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{CSTYLE "" -1 256 "" 1 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 
+257 "" 1 14 0 0 0 0 0 1 0 0 0 0 0 0 0 0 }{CSTYLE "" -1 258 "" 1 24 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 }{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "T
+imes" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }
+{PSTYLE "Heading 2" -1 4 1 {CSTYLE "" -1 -1 "Times" 1 14 0 0 0 1 2 1 
+2 2 2 2 1 1 1 1 }1 1 0 0 8 2 1 0 1 0 2 2 0 1 }{PSTYLE "Error" -1 8 1 
+{CSTYLE "" -1 -1 "Courier" 1 10 255 0 255 1 2 2 2 2 2 1 1 1 3 1 }1 1 
+0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Output" -1 11 1 {CSTYLE "" -1 
+-1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }3 3 0 0 0 0 1 0 1 0 2 2 
+0 1 }{PSTYLE "Maple Output" -1 12 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 
+0 1 2 2 2 2 2 2 1 1 1 1 }1 3 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple P
+lot" -1 13 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 
+1 }3 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Normal" -1 256 1 {CSTYLE "" 
+-1 -1 "Times" 1 14 0 0 0 1 2 1 2 2 2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 
+2 0 1 }{PSTYLE "Normal" -1 257 1 {CSTYLE "" -1 -1 "Times" 1 18 0 0 0 
+1 2 1 2 2 2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Normal" 
+-1 258 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 1 2 2 2 2 1 1 1 1 }1 
+1 0 0 0 0 1 0 1 0 2 2 0 1 }}
+{SECT 0 {SECT 0 {PARA 4 "" 0 "" {TEXT 258 22 "For-loop like commands" 
+}}{PARA 0 "" 0 "" {TEXT -1 19 "The three commands " }{TEXT 0 3 "seq" }
+{TEXT -1 2 ", " }{TEXT 0 3 "add" }{TEXT -1 6 ", and " }{TEXT 0 4 "prod
+" }{TEXT -1 150 " act very much like for-loops. In a sense they are ab
+breviations of special purpose for-loops. Let us look at a few example
+s of each of these commands" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 
+0 "" 0 "" {TEXT -1 17 "We have seen the " }{TEXT 0 3 "seq" }{TEXT -1 
+79 " command before. It is used to create expression sequences. Here i
+s an example." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "seq( ifacto
+r(n), n=1..10 );" }}{PARA 11 "" 1 "" {XPPMATH 20 "6,\"\"\"-%!G6#\"\"#-
+F%6#\"\"$*$)F$F'F#-F%6#\"\"&*&F$F#F(F#-F%6#\"\"(*$)F$F*F#*$)F(F'F#*&F$
+F#F-F#" }}}{PARA 0 "" 0 "" {TEXT -1 52 "Compare this last command to t
+he following for-loop." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 38 "fo
+r n from 1 to 10 do ifactor( n ) od;" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%!G6#\"\"#" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#-%!G6#\"\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#*
+$)-%!G6#\"\"#F(\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%!G6#\"\"&" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#*&-%!G6#\"\"#\"\"\"-F%6#\"\"$F(" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#-%!G6#\"\"(" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#*$)-%!G6#\"\"#\"\"$\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#*$)-%!G6#\"\"$\"\"#\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#*&-
+%!G6#\"\"#\"\"\"-F%6#\"\"&F(" }}}{PARA 0 "" 0 "" {TEXT -1 60 "Both com
+mands did roughly the same thing. An index variable " }{TEXT 0 1 "n" }
+{TEXT -1 58 " was incremented, in steps of 1, from an initial value of
+ " }{TEXT 0 1 "1" }{TEXT -1 21 " to a final value of " }{TEXT 0 2 "10
+" }{TEXT -1 56 " and for each value of the index variable the procedur
+e " }{TEXT 0 10 "ifactor(n)" }{TEXT -1 73 " was evaluated. The main di
+fference between the two commands is that the " }{TEXT 0 3 "seq" }
+{TEXT -1 101 " command produced one result, an expression sequence, bu
+t the for-loop produced 10 separate results. " }}{PARA 0 "" 0 "" 
+{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 23 "Now let us turn to the " 
+}{TEXT 0 3 "add" }{TEXT -1 66 " command. The following command will ad
+d up the first ten squares." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+20 "add( n^2, n=1..10 );" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"$&Q" }}}
+{PARA 0 "" 0 "" {TEXT -1 38 "This can also be done with a for-loop." }
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 72 "result := 0:\nfor n from 1 \+
+to 10 do\n  result := result + n^2\nod:\nresult;\n" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#\"$&Q" }}}{PARA 0 "" 0 "" {TEXT -1 133 "The main diff
+erence between the two is that the for-loop needed an extra variable a
+nd it produced a lot of intermediate results. The " }{TEXT 0 3 "add" }
+{TEXT -1 85 " command is also faster. Try adding up the first one mill
+ion squares using first the " }{TEXT 0 3 "add" }{TEXT -1 31 " command \+
+and then the for-loop." }}{PARA 0 "" 0 "" {TEXT -1 2 "  " }}{PARA 0 "
+" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "
+" {TEXT -1 190 "Look at the interesting output from these nested \"loo
+p\" commands. They sum up the first 10 squares, then the first 100 squ
+ares, then the first 1000 squares, etc. Can you explain the pattern?" 
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 49 "for k from 1 to 6 do\n  ad
+d( n^2, n=1..10^k )\nod;\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"$&Q" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"']$Q$" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#\"*+N$QL" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"-+]L$QL$" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#\"0++NL$QLL" }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#\"3++]LL$QLL$" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" 
+{TEXT -1 4 "The " }{TEXT 0 3 "mul" }{TEXT -1 26 " command is much like
+ the " }{TEXT 0 3 "add" }{TEXT -1 131 " command, it just uses multipli
+cation instead of addition. So the following command will find the pro
+duct of the first ten squares." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 20 "mul( n^2, n=1..10 );" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"/++W*=
+oJ\"" }}}{PARA 0 "" 0 "" {TEXT -1 32 "Here is the equivalent for-loop.
+" }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 72 "result := 1:\nfor n from
+ 1 to 10 do\n  result := result * n^2\nod:\nresult;\n" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#\"/++W*=oJ\"" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 20 "mul( n^
+2, n=1..99 );" }}{PARA 12 "" 1 "" {XPPMATH 20 "6#\"c^l++++++++++++++++
+++++++'\\%f>Ng`M<$\\Pd>m<piT&3Gc^^,o'HQ$[8VV*)eP2Yw%=()H*HV8!e(H<L0**[
+2YR\")y]x1'Rd!>?fV6%*GkjZ2'>Aw!Q!pW1#\\vKj4nz(eK$eYj**zLCOD$f@M,%3%Rk?
+(pb'e[W>;!f;%z+[*3*[#y4()" }}}{PARA 0 "" 0 "" {TEXT -1 4 "The " }
+{TEXT 0 7 "product" }{TEXT -1 91 " command can also do infinite produc
+ts. The following command uses the \"inert\" form of the " }{TEXT 0 7 
+"product" }{TEXT -1 16 " command ( i.e. " }{TEXT 0 7 "Product" }{TEXT 
+-1 145 ") to display a typeset version of the product notation on the \+
+left hand side of an equal sign, and on the right of the equal sign is
+ the regular " }{TEXT 0 7 "product" }{TEXT -1 42 " command to evaluate
+ the infinite product." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "res
+tart;" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 
+"" {MPLTEXT 1 0 37 "product( 1-1/(4*n^2),n=1..infinity);\n" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#,$*&\"\"#\"\"\"%#PiG!\"\"F&" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 0 "" 0 "" 
+{TEXT -1 38 "Here is one tricky difference between " }{TEXT 0 3 "add" 
+}{TEXT -1 2 ", " }{TEXT 0 3 "mul" }{TEXT -1 21 " on the one hand and \+
+" }{TEXT 0 3 "sum" }{TEXT -1 2 ", " }{TEXT 0 7 "product" }{TEXT -1 45 
+" on the other hand. Let us give the variable " }{TEXT 0 1 "i" }{TEXT 
+-1 42 " a value (it does not matter what value). " }}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 7 "i := 0;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%
+\"iG\"\"!" }}}{PARA 0 "" 0 "" {TEXT -1 8 "Now use " }{TEXT 0 1 "i" }
+{TEXT -1 29 " as the index variable in an " }{TEXT 0 3 "add" }{TEXT 
+-1 7 " and a " }{TEXT 0 3 "mul" }{TEXT -1 9 " command." }}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 16 "add(i, i=1..10);" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#\"#b" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 16 "mu
+l(i, i=1..10);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"(+)GO" }}}{PARA 0 
+"" 0 "" {TEXT -1 26 "Let us check the value of " }{TEXT 0 1 "i" }
+{TEXT -1 5 " now." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart:
+" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 
+31 "It is still zero. The value of " }{TEXT 0 1 "i" }{TEXT -1 50 " did
+ not affect, and was not affect by, the index " }{TEXT 0 1 "i" }{TEXT 
+-1 8 " in the " }{TEXT 0 3 "add" }{TEXT -1 4 " or " }{TEXT 0 3 "mul" }
+{TEXT -1 36 " commands. The index variable in an " }{TEXT 0 3 "add" }
+{TEXT -1 6 " or a " }{TEXT 0 3 "mul" }{TEXT -1 166 " command is local \+
+to that command and does not have anything to do with the global varia
+ble with the same name (just like local variables in procedures). Now \+
+try the " }{TEXT 0 3 "sum" }{TEXT -1 5 " and " }{TEXT 0 7 "product" }
+{TEXT -1 10 " commands." }}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "s
+um( i, i=1..10 );" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#b" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "product( i, i=1..10 );" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#\"(+)GO" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 0 "" }}}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 4 "" 0 "" {TEXT -1 
+0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "
+> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+37 "for j from 10 to 15 do\nifactor(j)\nod;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#*&-%!G6#\"\"#\"\"\"-F%6#\"\"&F(" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#-%!G6#\"#6" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#*&)-%!G6#
+\"\"#F(\"\"\"-F&6#\"\"$F)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#-%!G6#\"#
+8" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#*&-%!G6#\"\"#\"\"\"-F%6#\"\"(F(" 
+}}{PARA 11 "" 1 "" {XPPMATH 20 "6#*&-%!G6#\"\"$\"\"\"-F%6#\"\"&F(" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 2 " \n" }}}{EXCHG {PARA 0 "" 0 "" {TEXT 257 10 "Recursi
+on " }{TEXT -1 2 "\n1" }{TEXT 256 318 ".Factorials \nRecursion, where \+
+your procedure calls itself, can be a very useful technique for certai
+n problems. The classic example is calculating factorials (of course, \+
+Maple has its own factorial command: this example is just for illustra
+tion). \nHere\222s how you might write a factorial procedure non-recur
+sively: test" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 146 "factorial1
+:=proc(n::posint) \n# Calculates n! \nlocal i, result; \nresult:=1; \n
+for i from 2 to n do \nresult:=result*i; \nend do; \nresult; \nend pro
+c; \n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%+factorial1Gf*6#'%\"nG%'pos
+intG6$%\"iG%'resultG6\"F-C%>8%\"\"\"?(8$\"\"#F19$%%trueG>F0*&F0F1F3F1F
+0F-F-F-" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 16 "factorial1(5); \+
+\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"$?\"" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 17 "factorial1(100); " }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#\"it++++++++++++ko\"4@&=^#ePAF3#zp`iG=l:wRYT*3c\"*HK***f<_*Q'Hfo
+9i\"Qk#ofr!\\+nEc)Q#*p\"o_T%RW:iK$*" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 150 "factorial2:=proc(n::posint) \n# Calculates n! \nloca
+l i, result; \nresult:=1; \nfor i from 2 to n do \nresult:=result*i;\n
+print(result);\nend do; \nend proc; " }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#>%+factorial2Gf*6#'%\"nG%'posintG6$%\"iG%'resultG6\"F-C$>8%\"\"\"?(8
+$\"\"#F19$%%trueGC$>F0*&F0F1F3F1-%&printG6#F0F-F-F-" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 14 "factorial2(5);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"\"#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"'" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#C" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#\"$?\"" }}}{EXCHG {PARA 0 "" 0 "" {TEXT -1 38 "4 Lists, Sets, Loops,
+ and Conditionals" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "list1:=[2,4,6,8]; \n" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&list1G7&\"\"#\"\"%\"\"'\"\")" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "nops(list1);\n" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#\"\"%" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+18 "list2:=[-3,-7,15];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&list2G7%!
+\"$!\"(\"#:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 41 "op(list1); #
+ \221\221removes square brackets\222\222 " }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6&\"\"#\"\"%\"\"'\"\")" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 9 "list1[2];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"%" }}
+}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 9 "list1[4];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\")" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "list1[-1];" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#\"\")" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+10 "list1[-2];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"'" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "list1[2..4];" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7%\"\"%\"\"'\"\")" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 9 "list1[5];" }}{PARA 8 "" 1 "" {TEXT -1 34 "Error, inval
+id subscript selector\n" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 6 "l
+ist1;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#7&\"\"#\"\"%\"\"'\"\")" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 16 "op(2..4,list1); " }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6%\"\"%\"\"'\"\")" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 24 "list3:=[0,op(list1),10];" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%&list3G7(\"\"!\"\"#\"\"%\"\"'\"\")\"#5" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 30 "list4:=[op(list1), op(list2)];" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&list4G7)\"\"#\"\"%\"\"'\"\")!\"$!\"
+(\"#:" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 54 "list5:=[op(1..3,li
+st4),-100,op(4..nops(list4),list4)];" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#>%&list5G7*\"\"#\"\"%\"\"'!$+\"\"\")!\"$!\"(\"#:" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 28 "list6:=[egg,f,list3,x->x^2];" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#>%&list6G7&%$eggG%\"fG7(\"\"!\"\"#\"\"%\"\"'\"\"
+)\"#5f*6#%\"xG6\"6$%)operatorG%&arrowGF2*$)9$F*\"\"\"F2F2F2" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "list6[4];" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#f*6#%\"xG6\"6$%)operatorG%&arrowGF&*$)9$\"\"#\"\"\"F&
+F&F&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "list6[4](3);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"*" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 64 "list1:=[seq(i,i=0..20)]; # or you could write list1:=
+[$0..20]; \n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&list1G77\"\"!\"\"\"
+\"\"#\"\"$\"\"%\"\"&\"\"'\"\"(\"\")\"\"*\"#5\"#6\"#7\"#8\"#9\"#:\"#;\"
+#<\"#=\"#>\"#?" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 66 "list2:=[s
+eq(sin(Pi/i),i=1..6)]; # or list2:=[sin(Pi/i) $ i=1..6]; " }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#>%&list2G7(\"\"!\"\"\",$*&\"\"#!\"\"\"\"$#F'F*F
+',$*&F*F+F*F-F'-%$sinG6#,$*&\"\"&F+%#PiGF'F'F-" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 59 "list3:=[seq(i^2+1,i=0..10)]; # or list3:=[i^2+
+1 $ i=0..10];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&list3G7-\"\"\"\"\"
+#\"\"&\"#5\"#<\"#E\"#P\"#]\"#l\"##)\"$,\"" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 21 "map(factorial,list1);" }}{PARA 12 "" 1 "" {XPPMATH 
+20 "6#77\"\"\"F$\"\"#\"\"'\"#C\"$?\"\"$?(\"%S]\"&?.%\"'!)GO\"(+)GO\")+
+o\"*R\"*+;+z%\"++3-Fi\",+7Hyr)\".+!oVn28\"/+!)))*yA4#\"0+g4Guob$\"1+!G
+dqtBS'\"3+?$)3/5X;7\"4++kw\"3?!HV#" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 18 "map(evalf,list2); " }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#7($\"\"!F%$\"\"\"F%$\"+SSDg')!#5$\"+5y1rqF*$\"+CD&y(eF*$\"+++++]F*" }
+}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "map(x->x^2,list1);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#77\"\"!\"\"\"\"\"%\"\"*\"#;\"#D\"#O\"#
+\\\"#k\"#\")\"$+\"\"$@\"\"$W\"\"$p\"\"$'>\"$D#\"$c#\"$*G\"$C$\"$h$\"$+
+%" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "map(isprime,list3);" }
+}{PARA 11 "" 1 "" {XPPMATH 20 "6#7-%&falseG%%trueGF%F$F%F$F%F$F$F$F%" 
+}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 19 "map(isprime,list3);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7-%&falseG%%trueGF%F$F%F$F%F$F$F$F%" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+43 "list1:=[$0..100]; \nselect(isprime,list1); \n" }}{PARA 12 "" 1 "" 
+{XPPMATH 20 "6#>%&list1G7aq\"\"!\"\"\"\"\"#\"\"$\"\"%\"\"&\"\"'\"\"(\"
+\")\"\"*\"#5\"#6\"#7\"#8\"#9\"#:\"#;\"#<\"#=\"#>\"#?\"#@\"#A\"#B\"#C\"
+#D\"#E\"#F\"#G\"#H\"#I\"#J\"#K\"#L\"#M\"#N\"#O\"#P\"#Q\"#R\"#S\"#T\"#U
+\"#V\"#W\"#X\"#Y\"#Z\"#[\"#\\\"#]\"#^\"#_\"#`\"#a\"#b\"#c\"#d\"#e\"#f
+\"#g\"#h\"#i\"#j\"#k\"#l\"#m\"#n\"#o\"#p\"#q\"#r\"#s\"#t\"#u\"#v\"#w\"
+#x\"#y\"#z\"#!)\"#\")\"##)\"#$)\"#%)\"#&)\"#')\"#()\"#))\"#*)\"#!*\"#
+\"*\"##*\"#$*\"#%*\"#&*\"#'*\"#(*\"#)*\"#**\"$+\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#7;\"\"#\"\"$\"\"&\"\"(\"#6\"#8\"#<\"#>\"#B\"#H\"#J\"#P
+\"#T\"#V\"#Z\"#`\"#f\"#h\"#n\"#r\"#t\"#z\"#$)\"#*)\"#(*" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "for i from 3 to 9 do \nprint
+(i); \nend do; \n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"$" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#\"\"%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"
+\"&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"'" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"\"(" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\")" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"*" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 71 "for i from 21 to 32 by 2 do \nprint (i); print(factor
+ial(i)); \nend do; \n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#@" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"5++W4<<U44^" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"#B" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"8++kw\\))Qn,_
+e#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#D" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\";+++%)f)4LV+@6b\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+\"#F" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\">+++o2;_$=/Xp)))3\"" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#H" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#\"@+++;Oaa>qRP*>wT))" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#J" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"C+++!)GcDx\"G#z<a'QGA)" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 79 "for i from 2 to 5 do \nfor j from 2
+ to 5 do \nprint(i,j,i*j); \nend do; \nend do; \n" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6%\"\"#F#\"\"%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"#\"
+\"$\"\"'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"#\"\"%\"\")" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6%\"\"#\"\"&\"#5" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6%\"\"$\"\"#\"\"'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"$F#\"\"*
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"$\"\"%\"#7" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6%\"\"$\"\"&\"#:" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"
+\"%\"\"#\"\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"%\"\"$\"#7" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"%F#\"#;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6%\"\"%\"\"&\"#?" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"&
+\"\"#\"#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6%\"\"&\"\"$\"#:" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6%\"\"&\"\"%\"#?" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6%\"\"&F#\"#D" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "list1:
+=[2,3,5,7,11]; \n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&list1G7'\"\"#
+\"\"$\"\"&\"\"(\"#6" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 41 "for \+
+k in list1 do \nprint(2*k); \nend do; \n" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#\"\"%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"'" }}{PARA 11 "" 1 
+"" {XPPMATH 20 "6#\"#5" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#9" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#A" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 174 "ProductSoFar:=1: \nSumSoFar:=0: \nfor i from 1 to 10
+ do \nProductSoFar:=ProductSoFar*i; \nSumSoFar:=SumSoFar+i; \nend do: \+
+# Try replacing this : with ; \nProductSoFar; \nSumSoFar; \n" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#\"(+)GO" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+\"#b" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 52 "i:=1: \nwhile i<100
+0 do \nprint(i); \ni:=2*i; \nend do: " }}{PARA 11 "" 1 "" {XPPMATH 20 
+"6#\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"#" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#\"\"%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\")" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#;" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#\"#K" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#k" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"$G\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"$c#" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#\"$7&" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 258 "" 0 "" {TEXT -1 17 "FIBONACCI N
+UMBERS" }}{PARA 258 "" 0 "" {TEXT -1 258 "3.1.2 Fibonacci numbers \nRe
+call that the Fibonacci numbers F n are defined by \nF 1 = 1, F 2 = 1,
+ F n = F n-1+ F n-2    for n >2. \n(So  F 3 = 2, F 4 = 3, F 5 = 5, F 6
+ = 8, F 7 = 13, and so on.) Here\222s a recursive \nprocedure for calc
+ulating Fibonacci numbers: " }}{PARA 258 "" 0 "" {TEXT -1 1 " " }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }{TEXT -1 0 "" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 8 "restart:" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 111 "    fnm1 := 1;\n    fnm2 :=
+ 1;\n    for i to 5 do\n f := fnm1 + fnm2; fnm1 := fnm2; fnm2 := f od;
+\n    print(fnm2;\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%fnm1G\"\"\"
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%fnm2G\"\"\"" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%\"fG\"\"#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%fnm
+1G\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%fnm2G\"\"#" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#>%\"fG\"\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#
+>%%fnm1G\"\"#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%fnm2G\"\"$" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"fG\"\"&" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%%fnm1G\"\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%fnm
+2G\"\"&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"fG\"\")" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%%fnm1G\"\"&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>
+%%fnm2G\"\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"fG\"#8" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%%fnm1G\"\")" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%%fnm2G\"#8" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"#8" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 5 "F(2);" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#\"\"#" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 66 "a[1]:
+=1;a[2]:=1;\nfor i from 3 to 20 do\na[i]:=a[i-1]+a[i-2];\nod;\n\n\n" }
+}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#>&%\"aG6#\"\"\"F'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#\"\"#\"
+\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#\"\"$\"\"#" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#\"\"%\"\"$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%\"aG6#\"\"&F'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%
+\"aG6#\"\"'\"\")" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#\"\"(\"#8
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#\"\")\"#@" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>&%\"aG6#\"\"*\"#M" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>&%\"aG6#\"#5\"#b" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#\"
+#6\"#*)" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#\"#7\"$W\"" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#\"#8\"$L#" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>&%\"aG6#\"#9\"$x$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#>&%\"aG6#\"#:\"$5'" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#\"#;\"
+$()*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#\"#<\"%(f\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>&%\"aG6#\"#=\"%%e#" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>&%\"aG6#\"#>\"%\"=%" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#>&%\"aG6#\"#?\"%ln" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 92 "fib1
+:=proc(n)\nlocal i,a;\na[1]:=1;a[2]:=1;\nfor i from 3 to n do\na[i]:=a
+[i-1]+a[i-2];\nod\nend;\n" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "fib1(20
+);" }}{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%fib1Gf*6#%\"nG6
+$%\"iG%\"aG6\"F+C%>&8%6#\"\"\"F1>&F/6#\"\"#F1?(8$\"\"$F19$%%trueG>&F/6
+#F7,&&F/6#,&F7F1F1!\"\"F1&F/6#,&F7F1F5FBF1F+F+F+" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#\"%ln" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 111 "fi
+b1:=proc(n)\nlocal i,a;\na[1]:=1;a[2]:=1;\nfor i from 3 to n do\na[i]:
+=a[i-1]+a[i-2];\nod;\nseq(a[i],i=1..20)\nend;\n" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%%fib1Gf*6#%\"nG6$%\"iG%\"aG6\"F+C&>&8%6#\"\"\"F1>&F/6
+#\"\"#F1?(8$\"\"$F19$%%trueG>&F/6#F7,&&F/6#,&F7F1F1!\"\"F1&F/6#,&F7F1F
+5FBF1-%$seqG6$F</F7;F1\"#?F+F+F+" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 9 "fib1(20);" }}{PARA 11 "" 1 "" {XPPMATH 20 "66\"\"\"F#
+\"\"#\"\"$\"\"&\"\")\"#8\"#@\"#M\"#b\"#*)\"$W\"\"$L#\"$x$\"$5'\"$()*\"
+%(f\"\"%%e#\"%\"=%\"%ln" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 42 "
+plot([seq([i,a[i]],i=1..20)],style=point);" }}{PARA 13 "" 1 "" 
+{GLPLOT2D 496 496 496 {PLOTDATA 2 "6&-%'CURVESG6$767$$\"\"\"\"\"!F(7$$
+\"\"#F*F(7$$\"\"$F*F,7$$\"\"%F*F/7$$\"\"&F*F57$$\"\"'F*$\"\")F*7$$\"\"
+(F*$\"#8F*7$F:$\"#@F*7$$\"\"*F*$\"#MF*7$$\"#5F*$\"#bF*7$$\"#6F*$\"#*)F
+*7$$\"#7F*$\"$W\"F*7$F?$\"$L#F*7$$\"#9F*$\"$x$F*7$$\"#:F*$\"$5'F*7$$\"
+#;F*$\"$()*F*7$$\"#<F*$\"%(f\"F*7$$\"#=F*$\"%%e#F*7$$\"#>F*$\"%\"=%F*7
+$$\"#?F*$\"%lnF*-%'COLOURG6'%$RGBG$\"*++++\"!\")$F*F*F_q-%+_ATTRIBUTEG
+6#/Q'source6\"Q,mathdefaultFeq-%&STYLEG6#%&POINTG-%+AXESLABELSG6$Q!Feq
+F^r-%%VIEWG6$%(DEFAULTGFbr" 1 5 0 1 10 0 2 9 1 4 2 1.000000 45.000000 
+45.000000 0 0 "Curve 1" }}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 93 "
+fib3:=proc()\nlocal i,a;\na[1]:=1;a[2]:=1;\nfor i from 3 to 50 do\na[i
+]:=a[i-1]+a[i-2];\nod;\nend;\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%f
+ib3Gf*6\"6$%\"iG%\"aGF&F&C%>&8%6#\"\"\"F/>&F-6#\"\"#F/?(8$\"\"$F/\"#]%
+%trueG>&F-6#F5,&&F-6#,&F5F/F/!\"\"F/&F-6#,&F5F/F3F@F/F&F&F&" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 7 "fib3();" }}{PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\",D!pie7" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 257 "" 0 "
+" {TEXT -1 16 "Adding up Series" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 60 "oddsum:=0:\nfor \+
+z from 1 by 2 to 6 do\n   oddsum:=oddsum+z\nod:" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 7 "oddsum;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"
+*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 76 "oddsum:=0:\nfor z from
+ 1 by 2 to 5 do\n   oddsum:=oddsum+z:\nprint(\"z=\",z);\nod;" }}{PARA 
+0 "> " 0 "" {MPLTEXT 1 0 0 "" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'odd
+sumG\"\"\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q#z=6\"\"\"\"" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%'oddsumG\"\"%" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6$Q#z=6\"\"\"$" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%'odds
+umG\"\"*" }}{PARA 11 "" 1 "" {XPPMATH 20 "6$Q#z=6\"\"\"&" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 79 "sumprimes:=0:\nfor i to 10 do\n   p:=ithprime(i);\n  \+
+ sumprimes:=sumprimes+p;\nod;\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%
+\"pG\"\"#" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%*sumprimesG\"\"#" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"pG\"\"$" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%*sumprimesG\"\"&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>
+%\"pG\"\"&" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%*sumprimesG\"#5" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"pG\"\"(" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%*sumprimesG\"#<" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%
+\"pG\"#6" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%*sumprimesG\"#G" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"pG\"#8" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%*sumprimesG\"#T" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%
+\"pG\"#<" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%*sumprimesG\"#e" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"pG\"#>" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%*sumprimesG\"#x" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%
+\"pG\"#B" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%*sumprimesG\"$+\"" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"pG\"#H" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%*sumprimesG\"$H\"" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 76 "total:=0:\nxlist:=[23,43,62,12,81]:\nfor x in xlist
+ do\n  total:=total+x;\nod;\n\n" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&
+totalG\"#B" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&totalG\"#m" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%&totalG\"$G\"" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%&totalG\"$S\"" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%&t
+otalG\"$@#" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 256 "" 0 "" {TEXT -1 37 "Arrays, p
+rint command, and for-loop \n" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 
+0 26 "A := array([ 1,2,3,4,5]); " }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%
+\"AGK%'vectorG6#7'\"\"\"\"\"#\"\"$\"\"%\"\"&Q(pprint06\"" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 5 "A[1];" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#\"\"\"" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 18 "B:=array([1..5]); " }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%\"BGK%'vectorG6#7#;\"\"\"\"\"&Q(pprint06\"
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "print(B);" }}{PARA 11 "
+" 1 "" {XPPMATH 20 "6#K%'vectorG6#7'&%\"BG6#\"\"\"&F(6#\"\"#&F(6#\"\"$
+&F(6#\"\"%&F(6#\"\"&Q(pprint06\"" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 71 "\nres
+tart:\nV:=array(1..4):\nfor i from 1 to 3 do V[i]:= 2*i od:\nprint(V);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#K%'vectorG6#7&\"\"#\"\"%\"\"'&%\"V
+G6#F(Q(pprint06\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 20 "C:=arr
+ay(1..5,1..2):" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "print(C);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#K%'matrixG6#7'7$&%\"CG6$\"\"\"F+&F
+)6$F+\"\"#7$&F)6$F.F+&F)6$F.F.7$&F)6$\"\"$F+&F)6$F7F.7$&F)6$\"\"%F+&F)
+6$F=F.7$&F)6$\"\"&F+&F)6$FCF.Q(pprint06\"" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "" 0 "" {TEXT -1 1 "\n" }}}}{MARK "123 0 0" 0 }
+{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }
